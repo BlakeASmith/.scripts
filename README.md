@@ -12,4 +12,4 @@ For an even easier install using `curl`:
 source <(curl https://raw.githubusercontent.com/BlakeASmith/.scripts/main/one_shot_install.sh)
 ```
 
-This will place the source for the scripts under `~/.scripts` and also move all executibles to `~/.local/bin`
+This will place the source for the scripts under `~/.scripts` and also move all executables to `~/.local/bin`.
