@@ -1,3 +1,9 @@
 #!/bin/bash
 
-cat ~/.scripts/locations.txt | fzf | xargs -I {} "$EDITOR" {}
+selection=$(cat ~/.scripts/locations.txt | fzf)
+
+eval fullpath="$selection"
+
+nvim "$fullpath"
+
+
