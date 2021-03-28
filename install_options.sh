@@ -1,5 +1,13 @@
 #!/bin/sh
 
+
+# Setup for envfile to be loaded
+command="export $(cat .env | xargs)"
+grep -qxF "$command" "$HOME/.bashrc" || \
+	echo "$command" >> "$HOME/.bashrc"
+
+
+# Setup meta-data location
 echo -n "Where would you like to keep meta-data files? (defaults to ~/.scripts-meta):"
 read path
 
