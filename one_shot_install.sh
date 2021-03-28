@@ -4,7 +4,7 @@
 
 tmp=$(mktemp -d -t .scipts-XXX)
 
-cd $tmp
+pushd $tmp
 
 git clone https://github.com/BlakeASmith/.scripts
 
@@ -16,5 +16,7 @@ ls
 
 cd ..
 cp -r .scripts ~/.scripts
+
+popd
 
 rm -rf $tmp
