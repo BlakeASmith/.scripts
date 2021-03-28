@@ -7,5 +7,5 @@ path=${path:-"$HOME/.scripts-meta"}
 
 mkdir -p $path
 
-echo "SCRIPTS_META_DATA_PATH=$path" >> options.env
+echo "SCRIPTS_META_DATA_PATH=$path" > options.env
 
