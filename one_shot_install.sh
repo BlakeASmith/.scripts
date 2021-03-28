@@ -4,7 +4,8 @@
 
 tmp=$(mktemp -d -t .scipts-XXX)
 
-pushd $tmp
+pushd .
+cd $tmp
 
 git clone https://github.com/BlakeASmith/.scripts
 
