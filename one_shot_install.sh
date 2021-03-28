@@ -4,9 +4,13 @@
 
 tmp=$(mktemp -d -t .scipts-XXX)
 
+cd $tmp
+
 git clone https://github.com/BlakeASmith/.scripts
 
 cd .scripts
+
+ls
 ./install_deps.sh
 ./install_scripts.sh
 
