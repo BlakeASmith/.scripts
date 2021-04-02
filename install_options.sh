@@ -8,7 +8,7 @@ grep -qxF "$command" "$HOME/.bashrc" || \
 
 
 # Setup meta-data location
-echo -n "Where would you like to keep meta-data files? (defaults to ~/.scripts-meta):"
+echo -n "Where would you like to keep meta-data files? (defaults to ~/.scripts-meta): "
 read path
 
 path=${path:-"$HOME/.scripts-meta"}
@@ -16,3 +16,12 @@ path=${path:-"$HOME/.scripts-meta"}
 mkdir -p $path
 
 echo "SCRIPTS_META_DATA_PATH=$path" > options.env
+
+
+echo -n "Where would you like your notes stored?: "
+read path
+
+mkdir -p $path
+
+echo "NOTES_PATH=$path" > options.env
+
