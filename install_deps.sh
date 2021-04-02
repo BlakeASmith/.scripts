@@ -2,6 +2,8 @@
 
 # Install dependencies for scripts.
 
+poetry install .
+
 tmp=$(mktemp -d -t .scripts-deps-install-XXX)
 
 pushd .
