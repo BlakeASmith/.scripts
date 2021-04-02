@@ -15,13 +15,13 @@ path=${path:-"$HOME/.scripts-meta"}
 
 mkdir -p $path
 
-echo "SCRIPTS_META_DATA_PATH=$path" > options.env
+echo "export SCRIPTS_META_DATA_PATH=$path" > options.env
 
 
 echo -n "Where would you like your notes stored?: "
 read path
 
-mkdir -p $path
+mkdir -p "$HOME/$path"
 
-echo "NOTES_PATH=$path" > options.env
+echo "export NOTES_PATH=$HOME/$path" >> options.env
 

@@ -1,2 +1,2 @@
 #!/bin/sh
-(cd ~/.scripts && poetry run python note.py)
+(cd ~/.scripts && poetry run python note.py $@)
